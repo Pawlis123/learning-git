@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAMBLE.IO</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">GAMBLE.IO</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="slots.html" class="navbar__links"> Slots </a>
+          </li>
+          <li class="navbar__item">
+            <a href="roulette.html" class="navbar__links"> Roulette </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" class="button"> Sign Up </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="home_page">
+      <div class="login__container">
+        <form class="login__form">
+          <h1 class="login__text">login</h2>
+          <br /><br />
+          <input type="text" class="text" name="username" id="usernameToFetch"autocomplete="off" />
+          <br /><br />
+          <h3 class="login__text">username</h3>
+          <br /><br />
+          <input type="password" class="text" id="passwordToFetch" name="password" />
+          <br /><br />
+          <h3 class="login__text">password</h3><br />
+          <button class="signin" onClick="makeLoginRequest(event)">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
